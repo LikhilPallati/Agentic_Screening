@@ -21,10 +21,15 @@ The agent utilizes the **ReAct (Reasoning + Acting)** pattern:
 
 2.  **Environment Variables:**
     Create a `.env` file and add your Anthropic API key:
-    ANTHROPIC_API_KEY="sk-ant-..."
+    ```bash
+    ANTHROPIC_API_KEY=<your_api_key>
+    ```
+    or for Conda Environment, type the following command in your virtual env terminal
+    ```bash
+    conda env config vars set OPENAI_API_KEY=<your_api_key>
+    ```
 
-
-3.  **Run the Agent:**
+4.  **Run the Agent:**
     ```bash
     python main.py --resume_path "./my_resume.pdf" --job_url "[https://jobs.apple.com/](https://jobs.apple.com/)..."
     ```
