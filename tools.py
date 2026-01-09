@@ -3,6 +3,7 @@ from langchain_core.tools import tool
 from langchain_community.document_loaders import WebBaseLoader
 
 # This docstring is CRITICAL. It tells the LLM *when* to use this tool.
+# This tools reads the pdf and extract the text from it.
 @tool
 def read_resume_file(file_path: str) -> str:
     """
@@ -17,8 +18,9 @@ def read_resume_file(file_path: str) -> str:
         return text
     except Exception as e:
         return f"Error reading file: {e}"
-    
 
+
+# This reads the URL and extract the Job description from it.
 @tool
 def fetch_jd_from_url(url: str) -> str:
     """
@@ -31,4 +33,5 @@ def fetch_jd_from_url(url: str) -> str:
         docs = loader.load()
         return "\n".join([doc.page_content for doc in docs])
     except Exception as e:
+
         return f"Error fetching URL: {e}"
