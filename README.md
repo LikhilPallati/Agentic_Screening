@@ -33,7 +33,7 @@ The agent utilizes the **ReAct (Reasoning + Acting)** pattern:
     ```bash
     python main.py --resume_path "./my_resume.pdf" --job_url "https://jobs.apple.com/hiring/machine-learning-engineer"
     ```
-      or
+      or for default sample resume and default job description URL
       ```
       python main.py
       ```
