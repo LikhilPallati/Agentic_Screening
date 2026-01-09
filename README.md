@@ -24,19 +24,19 @@ The agent utilizes the **ReAct (Reasoning + Acting)** pattern:
     ```bash
     ANTHROPIC_API_KEY=<your_api_key>
     ```
-    or for Conda Environment, type the following command in your virtual env terminal
+    For Conda Environment, type the following command in your virtual env terminal
     ```bash
-    conda env config vars set OPENAI_API_KEY=<your_api_key>
+    conda env config vars set ANTHROPIC_API_KEY=<your_api_key>
     ```
 
 4.  **Run the Agent:**
     ```bash
     python main.py --resume_path "./my_resume.pdf" --job_url "[https://jobs.apple.com/](https://jobs.apple.com/)..."
     ```
-   or
-   ```
-   python main.py
-   ```
+      or
+      ```
+      python main.py
+      ```
 
 ## 📝 Assumptions
 1.  **Resume Format:** Assumes the PDF contains selectable text (not a scanned image).
