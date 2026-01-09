@@ -7,4 +7,3 @@ pdfplumber
 beautifulsoup4
 pydantic
 python-dotenv
-json
