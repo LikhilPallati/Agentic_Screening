@@ -54,7 +54,7 @@ The script saves a `candidate.json` file in the root directory:
     "address": "Toronto, Ontario"
   },
   "skills": ["python", "C++"],
-  "experience": [......, .......],
-  "education": [......, ........],
+  "experience": [AI Engineer at Vertex Intelligence (Toronto, Canada) - January 2022 to Present: Designed and deployed LangChain-based autonomous agents for resume screening and candidate-job matching., ...],
+  "education": ["Master of Science in Computer Science - University of British Columbia, Vancouver, Canada (2020-2022)", ...],
   "score": 88.5,
 }
