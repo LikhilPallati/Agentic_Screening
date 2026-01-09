@@ -38,7 +38,7 @@ The agent utilizes the **ReAct (Reasoning + Acting)** pattern:
       python main.py
       ```
 
-## 📝 Assumptions
+## Assumptions
 1.  **Resume Format:** Assumes the PDF contains selectable text (not a scanned image).
 2.  **JD Accessibility:** Assumes the Job URL is accessible via a standard GET request (not behind a login wall or captcha).
 3.  **LLM Model:** Uses `claude-3-5-sonnet-latest` for high-reasoning capability.
