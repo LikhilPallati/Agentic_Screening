@@ -2,7 +2,7 @@
 
 This project implements an autonomous agent that automates the candidate resume screening process. It uses **LangChain** and **claude-sonnet-4-5-20250929** to read a resume (PDF), fetch a Job Description (URL), and generate a structured JSON file.
 
-## 🏗 Architecture
+## Architecture
 The agent utilizes the **ReAct (Reasoning + Acting)** pattern:
 1.  **Tools:**
     * `read_resume_file`: Uses `pdfplumber` to extract text from local PDFs.
@@ -28,6 +28,10 @@ The agent utilizes the **ReAct (Reasoning + Acting)** pattern:
     ```bash
     python main.py --resume_path "./my_resume.pdf" --job_url "[https://jobs.apple.com/](https://jobs.apple.com/)..."
     ```
+   or
+   ```
+   python main.py
+   ```
 
 ## 📝 Assumptions
 1.  **Resume Format:** Assumes the PDF contains selectable text (not a scanned image).
